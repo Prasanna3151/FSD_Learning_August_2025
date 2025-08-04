@@ -1,0 +1,47 @@
+#id_selector {
+    background-color: pink;
+    border: 1px solid ;
+}
+
+.class_selector {
+    background-color: lightcyan;
+    border: 1px dotted ;
+}
+
+/* unvisited link */
+.pseudo:link {
+  color: #FF0000;
+}
+
+/* visited link */
+.pseudo:visited {
+  color: #00FF00;
+}
+
+/* mouse over link */
+.pseudo:hover {
+  color: #FF00FF;
+}
+
+/* selected link */
+.pseudo:active {
+  color: #0000FF;
+}
+
+.nav_div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.css_basics_nav_buttons{
+    width: 100px;
+    height: 20px;
+    border: 2px solid blue;
+    background-color: lightblue;
+    border-radius: 7.5px;
+}
+
+.css_basics_nav_buttons:hover {
+    background-color: lightcyan;
+}
