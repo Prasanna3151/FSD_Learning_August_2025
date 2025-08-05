@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: goldenrod;
+  margin-bottom: 10px;
+}
+
+.chef-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.pizza-task {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.kosi-pizza-div {
+  width: 80%;
+  display: flex;
+  border: 3px solid rosybrown;
+  border-radius: 10px;
+  padding: 20px;
+  flex-direction: column;
+  text-align: center;
+  background-color: pink;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.pizza-item {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 4, 0.2);
+  padding: 20px;
+  background-color: whitesmoke;
+  align-items: center;
+}
+
+.pizza-item i {
+  font-size: 2.5em;
+  color: orangered;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* 
+ .header {
+  background-color: #ffcc00;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.party-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.chef-task {
+  width: 80%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ff6161;
+}
+
+.pizza-flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.pizza-item {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0,4px,6px,rgba(0, 0, 0, 0.1);
+} */
