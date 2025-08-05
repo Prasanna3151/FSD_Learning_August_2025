@@ -1,0 +1,49 @@
+.parent {
+  border: 3px solid black;
+  width: 80%;
+}
+
+.red {
+  width: 65%;
+  background-color: red;
+}
+
+.yellow {
+  width: 50vw;
+  background-color: goldenrod;
+}
+
+.green {
+  width: 10rem;
+  background-color: green;
+}
+
+.pink {
+  width: 160px;
+  background-color: palevioletred;
+}
+
+p {
+  width: 70ch;
+}
+
+.nav_div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border: 1px double;
+  padding: 20px;
+
+}
+
+.css_basics_nav_buttons {
+  width: 100px;
+  height: 20px;
+  border: 2px solid blue;
+  background-color: lightblue;
+  border-radius: 7.5px;
+}
+
+.css_basics_nav_buttons:hover {
+    background-color: lightcyan;
+}

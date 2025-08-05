@@ -1,66 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS and Selectors</title>
-    <link rel="stylesheet" href="css_basics.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css_basics.css" />
+  </head>
+  <body>
     <header><h1>CSS</h1></header>
     <nav>
-        <div class="nav_div">
-            <Button  onclick="window.location.href='css_basics.html'" class="css_basics_nav_buttons">CSS Basics</Button>
-            <Button onclick="window.location.href='positions.html'" class="css_basics_nav_buttons">Positions</Button>
-            <Button class="css_basics_nav_buttons">CSS Basics</Button>
-        </div>
+      <div class="nav_div">
+        <button
+          onclick="window.location.href='css_basics.html'"
+          class="css_basics_nav_buttons"
+        >
+          CSS Basics
+        </button>
+        <button
+          onclick="window.location.href='positions.html'"
+          class="css_basics_nav_buttons"
+        >
+          Positions
+        </button>
+        <button
+          onclick="window.location.href='units.html'"
+          class="css_basics_nav_buttons"
+        >
+          Units
+        </button>
+        <button
+          onclick="window.location.href='flexbox.html'"
+          class="css_basics_nav_buttons"
+        >
+          Flex Box
+        </button>
+      </div>
     </nav>
     <section>
-        <article>
-            <h3>What is CSS?</h3>
-            <p>CSS is giving style to a HTML page. HTML is just the sceleton of a webpage. Using CSS we can add colors, positioning and basically it is used for styling. <em>CSS - CASCADING STYLE SHEETS</em> <br><br>
-            CSS has three heirarchies:
-            <ul>
-                <li>User Agent stylesheet - <span>Present defaultly in the browser</span></li>
-                <li>User stylesheet - <span> User can change temporarily in the browser</span></li>
-                <li>Author Stylesheet - <span>This is what we are going to learn and write code.</span></li>
-            </ul>
+      <article>
+        <h3>What is CSS?</h3>
+        <p>
+          CSS is giving style to a HTML page. HTML is just the sceleton of a
+          webpage. Using CSS we can add colors, positioning and basically it is
+          used for styling. <em>CSS - CASCADING STYLE SHEETS</em> <br /><br />
+          CSS has three heirarchies:
         </p>
-        </article>
-        <hr>
-        <article>
-            <h3>CSS Selectors</h3>
-            <p>
-                CSS selectors are used to style a particular block of HTML based on what we select. <br> <br>
-                There are 4 types of selectors:
-                <ol type="i">
-                    <li>Universal selectors - uses "*", applies style to all the elements.</li>
-                    <li>Type Selectors - uses element name, applies style based on elements.</li>
-                    <li>Class selectors - uses ".", applies style based on class.</li>
-                    <li>ID selectors - uses "#", applies style based on ID. Each element should have a unique ID.</li>
-                </ol>
-            </p>
-        </article>
+        <ul>
+          <li>
+            User Agent stylesheet -
+            <span>Present defaultly in the browser</span>
+          </li>
+          <li>
+            User stylesheet -
+            <span> User can change temporarily in the browser</span>
+          </li>
+          <li>
+            Author Stylesheet -
+            <span>This is what we are going to learn and write code.</span>
+          </li>
+        </ul>
+      </article>
+      <hr />
+      <article>
+        <h3>CSS Selectors</h3>
+        <p>
+          CSS selectors are used to style a particular block of HTML based on
+          what we select. <br />
+          <br />
+          There are 4 types of selectors:
+        </p>
+        <ol type="i">
+          <li>
+            Universal selectors - uses "*", applies style to all the elements.
+          </li>
+          <li>
+            Type Selectors - uses element name, applies style based on elements.
+          </li>
+          <li>Class selectors - uses ".", applies style based on class.</li>
+          <li>
+            ID selectors - uses "#", applies style based on ID. Each element
+            should have a unique ID.
+          </li>
+        </ol>
+      </article>
     </section>
 
     <h2>Examples</h2>
 
     <section>
-        <p id="id_selector">This is an example for ID selector and the css used for this is selectors.css</p>
-        <p class="class_selector">This is an example for Class selector and the css used for this is selectors.css</p>
+      <p id="id_selector">
+        This is an example for ID selector and the css used for this is
+        selectors.css
+      </p>
+      <p class="class_selector">
+        This is an example for Class selector and the css used for this is
+        selectors.css
+      </p>
     </section>
-    
+
     <section>
-        <h3>Pseudo Classes</h3>
-        <p>
-            Pseudo classes are a part of CSS, which are used to apply styles when specific actions are performed. Like hovering, clicking,etc.
-            <br>
-            Here we will see some of the examples.
-        </p>
-        <p>
-            This is writen as an example for Pseudo classes. Below you can see a link anchor tag. bring your mouse on top of the "hover me" and check out ehat happens.
-        </p>
-        <a target="_blank" href="https://www.w3schools.com/css/css_pseudo_classes.asp" class="pseudo">Hover me</a>
+      <h3>Pseudo Classes</h3>
+      <p>
+        Pseudo classes are a part of CSS, which are used to apply styles when
+        specific actions are performed. Like hovering, clicking,etc.
+        <br />
+        Here we will see some of the examples.
+      </p>
+      <p>
+        This is writen as an example for Pseudo classes. Below you can see a
+        link anchor tag. bring your mouse on top of the "hover me" and check out
+        ehat happens.
+      </p>
+      <a
+        target="_blank"
+        href="https://www.w3schools.com/css/css_pseudo_classes.asp"
+        class="pseudo"
+        >Hover me</a
+      >
     </section>
-</body>
-</html
+  </body>
+</html>
