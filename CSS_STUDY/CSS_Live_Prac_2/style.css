@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: initial;
+  background-color: initial;
+  color: inherit;
+  font: inherit;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+}
+.header {
+  background-image: linear-gradient(to right, #18a0be, #622db9);
+}
+.logo {
+  height: 30px;
+  width: 30px;
+  
+}
+.dd_toggle {
+}
+.dd_toggle_icon {
+}
+.dd_toggle_text {
+}
