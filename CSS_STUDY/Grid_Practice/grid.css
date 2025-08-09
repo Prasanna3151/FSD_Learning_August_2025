@@ -1,0 +1,43 @@
+
+body > * {
+    background-color: black;   
+    border: 3px solid red;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.6fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "div1 div1 div1"
+    "div2 div3 div4"
+    "div5 div6 div6"
+    "div7 div7 div7"
+}
+
+#div1 {
+    grid-area: div1;
+    background-color: lightcyan;
+}
+.div2 {
+    grid-area: div2;
+    background-color: lightblue;
+}
+#div3 {
+    grid-area: div3;
+    background-color: aliceblue;
+}
+#div4 {
+    grid-area: div4;
+    background-color: aliceblue;
+}
+#div5 {
+    grid-area: div5;
+    background-color: aliceblue;
+}#div6 {
+    grid-area: div6;
+    background-color: lightcoral;
+}#div7 {
+    grid-area: div7;
+    background-color: aliceblue;
+}
