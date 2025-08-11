@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link src="https://cdn.tailwindcss.com"></link> -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: black;
+        color: aliceblue;
+      }
+      header {
+        background-color: gray;
+        padding: 10px;
+        color: black;
+      }
+      section {
+        padding: 10px;
+        margin-left: 10px;
+      }
+      p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-950 text-white">
+    <header class="bg-gray-400 shadow-[0_4px_6px_rgba(255,255,255,0.3)]">
+      <h1 class="text-3xl font-bold p-2 text-">DOM Fundamentals</h1>
+    </header>
+    <section class="p-2">
+      <h2 class="">What is DOM?</h2>
+      <p class="">
+        DOM is a platform which is language independent which is available in
+        the browser and it is called as the Document Object Model.
+      </p>
+    </section>
+    <section>
+      <h2>DOM Tree</h2>
+      <p>
+        DOM Tree is the order in which the browser gets its files or data to
+        render those in the document.
+      </p>
+      <ol type="1">
+        <li>Bytes</li>
+        <li>Characters</li>
+        <li>Token</li>
+        <li>Nodes</li>
+        <li>DOM</li>
+      </ol>
+    </section>
+    <section id="parent_section">
+      <h2>Example</h2>
+      <p>
+        Suppose you have a webpage where user clicks a button and the textt in a
+        header changes immediately
+      </p>
+
+      <h1 id="title_to_change">Welcome To the webpage.</h1>
+      <button id="btn">Click here</button>
+    </section>
+    <script>
+      const title = document.getElementById("title_to_change");
+      const button = document.getElementById("btn");
+      const parent = document.getElementById("parent_section");
+      button.addEventListener("click", function change_text() {
+        title.textContent = "Text is changed";
+        let newElement = document.createElement("h1");
+        newElement.textContent = "My name is Prasanna Sankar J";
+        parent.append(newElement);
+        parent.style.color = "red";
+      });
+    </script>
+    <section>
+      <h3>
+        Image a page with several paragraphs. You havw to change the color of
+        the first paragraph and apply different styles to paragraphs based on
+        their class.
+      </h3>
+      <h2 id="main-title">Shopping List</h2>
+      <p class="item">Milagai Thool</p>
+      <p class="item">Manjal Thool</p>
+      <p>Garam Masala</p>
+    </section>
+    <script>
+      //select by id:
+      const title_1 = document.getElementById("main-title");
+      title_1.style.color = "goldenrod";
+      //select by class name:
+      const items = document.getElementsByClassName("item");
+      Array.from(items).forEach((element) => {
+        element.style.fontWeight = "bold";
+      });
+      //select by tag name:
+      const para = document.getElementsByTagName("p");
+      para[0].style.color = "beige"; //see the explanation of What is DOM in the o/p.
+    </script>
+  </body>
+</html>

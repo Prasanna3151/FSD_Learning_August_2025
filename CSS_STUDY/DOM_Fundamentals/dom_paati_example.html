@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Kosi Example</title>
+  </head>
+  <body>
+    <header>
+      <h1>Kosi's Shopping List:</h1>
+    </header>
+    <main>
+      <p>
+        Prasanna, naa soldra items laa note panni vechuko. Kadaikku poitu
+        vangitu varanum. Marandhuradha da mavane!!
+      </p>
+      <input type="text" id="input_field" placeholder="Enter the items" />
+      <button id="add_button">Add Items</button>
+      <p id="kosi_says">
+        Kosi: Vengayam, Thakkali, Puli, Uppu, Thovaramparuppu, Chicken, Pudhina.
+        Idhellathayum oru list potu note panniko da.
+      </p>
+      <ul id="unodered_list">
+
+      </ul>
+    </main>
+    <script>
+        const inp = document.getElementById("input_field");
+        const addButton = document.getElementById("add_button");
+        const kosiSays= document.getElementById("kosi_says");
+        const unoderedList= document.getElementById("unodered_list");
+
+        const shoppingItems = [];
+        addButton.addEventListener("click", function(){
+            const value = inp.value.trim();
+            const newItem= value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
+
+            if(newItem){
+                shoppingItems.push(newItem);
+
+                const listItem = document.createElement("li");
+                listItem.textContent = newItem;
+                unoderedList.appendChild(listItem);
+                kosiSays.textContent= "Kosi: "+newItem+" add aairuchu adutha item ah note pannuu!!";
+                inp.value = ""
+
+                const removeButton = document.createElement("button");
+                removeButton.textContent= "Remove";
+                removeButton.style.marginLeft= "10px";
+                listItem.appendChild(removeButton);
+                removeButton.addEventListener('click', function(){
+                    listItem.remove();
+                    kosiSays.textContent = "Kosi: Nalla vela da andha "+newItem+ " tha remove pannita."
+                });
+            }
+        });
+    </script>
+  </body>
+</html>

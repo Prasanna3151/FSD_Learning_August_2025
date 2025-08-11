@@ -1,0 +1,7 @@
+Auto close tag - jua han
+Auto rename tag -jua han
+HTML CSS Support - ecmel
+Prettier code formatter - Prettier
+Jira and Bitbucket (atlassian Lab)
+ES7+ React/redux - dsznajder
+Cody: AI - source graph.
