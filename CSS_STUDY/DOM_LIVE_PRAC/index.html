@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-teal-700 font-serif m-0 p-0 h-screen flex flex-col">
+    <header class="bg-gray-300 text-2xl font-bold font-serif text-center">
+      <h1>PRASANNA'S QUIZ COMPETITION</h1>
+    </header>
+    <main class="flex-grow flex justify-center items-center" id="overall">
+      <div
+        id="container"
+        class="w-[60vw] bg-gray-100 border-[3px] border-purple-600 rounded-lg"
+      >
+        <div id="heading" class="flex justify-center">
+          <p class="bg-purple-600 text-center text-white mt-[10px] p-2">
+            JavaScript Quiz App
+          </p>
+        </div>
+        <div id="" class="flex justify-between gap-3 m-2 p-2">
+          <p id="question_count">Questions x of y</p>
+          <p id="count_down" class="bg-orange-400 rounded-md p-1">Time Left</p>
+        </div>
+        <div id="quiz" class="bg-red-200 flex flex-col gap-1 items-center">
+          <p class="p-2" id="question">Question</p>
+          <button
+            class="btn border-purple-600 border-2 w-[80%] m-1 bg-gray-200 rounded-md text-left pl-2"
+            id="btn1"
+          >
+            A.
+          </button>
+          <button
+            class="btn border-purple-600 border-2 w-[80%] m-1 bg-gray-200 rounded-md text-left pl-2"
+            id="btn2"
+          >
+            B.
+          </button>
+          <button
+            class="btn border-purple-600 border-2 w-[80%] m-1 bg-gray-200 rounded-md text-left pl-2"
+            id="btn3"
+          >
+            C.
+          </button>
+          <button
+            class="btn border-purple-600 border-2 w-[80%] m-1 bg-gray-200 rounded-md text-left pl-2"
+            id="btn4"
+          >
+            D.
+          </button>
+          <hr class="border-1 mt-[20px] border-black w-[80%]" />
+          <p class="text-center">Prasanna Self Learn AUG-2025</p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
