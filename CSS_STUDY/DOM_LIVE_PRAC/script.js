@@ -68,6 +68,9 @@ function showScores() {
       </a>
     </div>
   `;
+  setTimeout(function(){
+    document.getElementById("quiz").innerHTML = "<div class='bg-black text-white w-[80%] h-[40%]'><p>Times UP!!!!</p></div>";
+  },4000)
 }
 
 //function for checking the correct answer

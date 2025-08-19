@@ -1,0 +1,55 @@
+1. What is JavaScript?
+JavaScript is a single-threaded synchronous language which executes all the code line by line in the order in which it is written.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. JavaScript is synchronous or Asynchronous?
+JavaScript is basically synchronous but it can be changed to asynchronous by using setTimeout() method.
+Example:
+console.log(1);
+setTimeout(function(){
+    console.log(2);
+},2000);
+console.log(3);
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. Synchronous vs Asynchronous:
+1-> Tasks done one after another, no skipping.
+2-> Time-consuming tasks are handled in the background.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. What is callback?
+callback function is calling another function as an argument.
+
+for ex:
+
+function add(a,b){
+    return a+b;
+}
+function sub(a,b){
+    return a-b;
+}
+function getAns(a,b,todo){
+    console.log(todo(a,b));
+}
+getAns(10,20,add);
+getAns(20,5,sub);
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Promise & its properties:
+*In Asynchronous programming there are two types.
+Producer Code -> The code that produces some result.
+Consumer Code -> The code that consumes the result produced by the producer code.
+*Promise is an object which makes the result produced by the producer code available to the consumer code and has many properties
+*The producer code is contained inside the promice object.
+
+Syntax :
+let promiseObj = new Promise(function(resolve,reject){
+
+});
+
+*Promise object has two properties PromiseState and PromiseResult.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
