@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bucket List Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-r from-indigo-700 via-purple-700 to-pink-500 font-sans antialiased leading-normal tracing-normal"
+  >
+    <div class="max-w-3xl mx-auto rounded-lg p-6 shadow-lg bg-[#f5f5dc] mt-10">
+      <h2 class="text-3xl font-bold text-center py-4 text-teal-900">
+        Bucket List Tracker
+      </h2>
+
+      <!-- Add Items Section -->
+      <section class="mb-8">
+        <p class="text-xl font-semibold mb-4 text-slate-900">
+          Add to Bucket List
+        </p>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-3 mb-4 gap-4"
+          id="bucket_container"
+        >
+          <input
+            id="description"
+            class="border border-gray-400 rounded-md text-center focus:outline-none focus:ring-2 focus:ring-teal-800 p-2"
+            type="text"
+            placeholder="What do you want to achieve?"
+            spellcheck="no"
+          />
+          <select
+            class="border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-800 p-2"
+            id="category"
+          >
+            <option value="Travel">Travel</option>
+            <option value="Health">Health</option>
+            <option value="Savings">Savings</option>
+            <option value="Others">Others</option>
+          </select>
+          <input
+            id="target_date"
+            class="border border-gray-400 rounded-md text-center focus:outline-none focus:ring-2 focus:ring-teal-800 p-2"
+            type="date"
+          />
+        </div>
+        <button
+          onclick="addItem()"
+          class="w-full sm:w-auto px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-500 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-purple-600 transition"
+        >
+          Add Item
+        </button>
+      </section>
+
+      <!-- Progress Bar section -->
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold mb-4 text-slate-900">Progress</h2>
+        <div class="w-full h-4 bg-gray-300 rounded-full mb-4">
+          <div
+            id="progress-bar"
+            class="bg-gradient-to-r from-green-400 to-blue-500 h-4 rounded-full"
+            style="width: 0%"
+          ></div>
+        </div>
+        <p>
+          Completed: <span id="completed_count">0</span>/<span id="total_count"
+            >0</span
+          >
+        </p>
+      </section>
+
+      <!-- Filter section  -->
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold mb-4 text-slate-900">
+          Filter by Category
+        </h2>
+        <div class="flex gap-4">
+          <label>
+            <input
+              type="radio"
+              onclick="filterItems('All')"
+              value="All"
+              class="mr-1"
+              name="filter_"
+              checked
+            />All
+          </label>
+          <label>
+            <input
+              type="radio"
+              onclick="filterItems('Travel')"
+              value="Travel"
+              class="mr-1"
+              name="filter_"
+            />Travel
+          </label>
+          <label>
+            <input
+              type="radio"
+              onclick="filterItems('Health')"
+              value="Health"
+              class="mr-1"
+              name="filter_"
+            />Health
+          </label>
+          <label>
+            <input
+              type="radio"
+              onclick="filterItems('Savings')"
+              value="Savings"
+              class="mr-1"
+              name="filter_"
+            />Savings
+          </label>
+          <label>
+            <input
+              type="radio"
+              onclick="filterItems('Others')"
+              value="Others"
+              class="mr-1"
+              name="filter_"
+            />Others
+          </label>
+        </div>
+      </section>
+
+      <!-- Bucket List section -->
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold mb-4 text-slate-900">
+          Your Bucket List
+        </h2>
+        <ul id="bucket_list" class="space-y-4"></ul>
+      </section>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
