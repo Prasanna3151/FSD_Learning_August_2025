@@ -1,0 +1,66 @@
+1. 
+Before ES6 only one variable was used all over javaScript. i.e. var
+It has some problems. So, they introduced two new data types. let and const.
+Compiler will declare all their var variables and functions in the global frame. 
+let is also used to avoid re-declaration of previously used variables.
+
+2. Template Literals:
+These are used to print strings along with the resultant outputs.
+
+syntax ex: 
+console.log(`Happy Birthday, ${name}, you are now ${age} years old!`);
+
+3. Array and Data destructuring:
+
+example:
+i. without destructuring:-
+const meal = ["rice","sambar","rasam","kaarakolambu"];
+let main = meal[0];
+let side1 = meal[1];
+let side2 = meal[2];
+let side3 = meal[3];
+console.log(main, side1,side2, side3);
+
+const dosa = {type:"masala",spicy:true,count:3};
+let type = dosa.type;
+let spicy = dosa.spicy;
+let count = dosa.count;
+console.log(type,spicy,count);
+
+ii. with destructuring:-
+const meal = ["rice","sambar","rasam","kaarakolambu"];
+const [main,side1,side2,side3] = meal;
+console.log(main, side1,side2, side3);
+
+const dosa = {type:"masala",spicy:true,count:3};
+const {type,spicy,count} = dosa;
+console.log(type,spicy,count);
+
+
+4. Arrow function:
+
+simplify the writing of function.
+example: 
+//traditional function:
+let fName = "Prasanna";
+let lName = "Sankar";
+function fullName(fName,lName) {
+    console.log(${fName}${lName});
+}
+
+//using arrow function:
+let fName = "Prasanna";
+let lName = "Sankar";
+const fullName = (fName,lName) => {
+    console.log(${fName}${lName});
+}
+
+5. Spread and Rest:
+const ingredients = ['rice','dal','salt'];
+const allIngredients = ['coconut','chillies', ...ingredients];
+console.log(allIngredients);
+
+const makeMeal = (main, ...sideDishes) => {
+    console.log(${main}${sideDishes});
+} 
+makeMeal('dosa','sambar','chutney','chicken curry');

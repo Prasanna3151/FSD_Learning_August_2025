@@ -1,0 +1,16 @@
+1. What is JSX?
+* JSX is HTML-looking syntax (XML entension of ECMAScript)
+* JS used for creating DOM, you can use 'JSX' - flexible for developers.
+* Whatever code we write in JSX will be converted to JS code.
+
+2. JSX vs HTML
+i. Adjacent JSX elements should be wrapped in an enclosing tag (it should have a parent either a div or empty fragment)
+ii. closing tag is mandatory for all elements.
+iii. JSX properties are not similar to HTML attributes. For ex: HTML-> for JSX-> htmlfor | HTML-> class JSX-> className.
+iv. JSX is case sensitive.
+v. {} are the special syntax in React.
+
+3. What is props?
+Used to transfer data from parent to child component.
+
+4.
